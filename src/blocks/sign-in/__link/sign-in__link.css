@@ -1,0 +1,7 @@
+.sign-in__link {
+  text-decoration: none;
+  color: #fff;
+}
+.sign-in__link:hover {
+  opacity: o.8;
+}

@@ -1,0 +1,27 @@
+
+.profile__avatar-overlay {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.profile__avatar-overlay:after {
+  width: 100%;
+  height: 100%;
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:rgba(0, 0, 0, 0.8);
+  background-image: url(../../../images/avatar-edition-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.profile__avatar-overlay:hover::after {
+  opacity: 1;
+  cursor: pointer;
+}
